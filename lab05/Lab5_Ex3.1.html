@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab05 Ex3.1 - Infographic & Video</title>
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --card: #ffffff;
+        --primary: #1d4ed8;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --border: #dfe7f3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #eef5ff, #f8fafc);
+        color: var(--text);
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 24px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 28px;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(2rem, 4vw, 3rem);
+        color: var(--primary);
+      }
+
+      .subtitle {
+        margin: 0 auto;
+        max-width: 700px;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 24px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+        overflow: hidden;
+      }
+
+      .card h2 {
+        margin: 0;
+        padding: 18px 22px 12px;
+        font-size: 1.3rem;
+        color: var(--text);
+      }
+
+      .image-wrap {
+        padding: 0 18px 18px;
+      }
+
+      .image-wrap img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: #f8fafc;
+      }
+
+      .video-wrap {
+        padding: 0 18px 18px;
+      }
+
+      .video-wrap iframe {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border: 0;
+        border-radius: 12px;
+        background: #000;
+      }
+
+      .footer-note {
+        margin-top: 24px;
+        padding: 16px 20px;
+        border-radius: 12px;
+        background: #eef4ff;
+        border: 1px solid #d8e6ff;
+        color: var(--text);
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 768px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Infographic và Video Nhiệm vụ 2.2</h1>
+        <p class="subtitle">
+          Trang tổng hợp thông tin trực quan và video minh họa cho bài tập
+          Nhiệm vụ 2.2, giúp người xem dễ dàng nắm bắt nội dung chính trong một
+          giao diện đơn giản và rõ ràng.
+        </p>
+      </header>
+
+      <main class="grid">
+        <section class="card">
+          <h2>Infographic</h2>
+          <div class="image-wrap">
+            <img src="Lab05_Ex2.1.png" alt="Infographic của Nhiệm vụ 2.2" />
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Video Youtube</h2>
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/0G9twriJd2A?si=koYoIRMt7iibXl3E"
+              title="Video Nhiệm vụ 2.2"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      </main>
+
+      <div class="footer-note">
+        <strong>Ghi chú bản quyền:</strong> Nội dung được sử dụng cho mục đích
+        học tập và nghiên cứu. Hình ảnh và video được tham khảo từ nguồn có sẵn
+        trong bài tập; mọi quyền thuộc về đối tượng sở hữu ban đầu. Không sao chép
+        hoặc sử dụng thương mại mà không có sự đồng ý.
+      </div>
+    </div>
+  </body>
+</html>
